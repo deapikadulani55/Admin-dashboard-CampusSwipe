@@ -12,6 +12,7 @@ import LoginPage from './scenes/loginPage';
 import Devices from './scenes/devices';
 import ProfileForm from "./scenes/form"
 import Subscriptions from './scenes/subscriptions';
+import Barcharts from './scenes/charts'
 
 const App = () => {
   const [theme, colorMode] = useMode();
@@ -43,6 +44,9 @@ const App = () => {
                   <Route path='/devices' element={<Devices/>}/>
                   <Route path='/subscriptions' element={<Subscriptions/>} />
                   <Route path='/form' element={<ProfileForm />} />
+                  <Route path='/charts' element={<Barcharts />} />
+
+
                 </Routes>
               </main>
             </>
